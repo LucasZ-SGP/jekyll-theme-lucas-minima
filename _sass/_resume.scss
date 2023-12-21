@@ -152,6 +152,16 @@
         border-bottom: none;
         font-weight: bold;
       }
+      &::before {
+        content: attr(title);
+        font-weight: bold;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 }
