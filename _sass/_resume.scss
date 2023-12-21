@@ -130,6 +130,33 @@
   &.not-looking { width: 400px; }
 }
 
+.contact-info {
+  margin: 1.5rem auto;
+  width: 300px;
+  text-align: center;
+
+  p {
+    margin: 0.5rem 0;
+    @include sans_light;
+    color: #333;
+
+    a {
+      color: #333;
+      text-decoration: none;
+      @include transition(color 0.2s ease);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.not-looking {
+  width: 400px;
+}
+
+
 // resume content styles
 
 .content-section {

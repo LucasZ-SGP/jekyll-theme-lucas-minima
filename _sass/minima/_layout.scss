@@ -44,9 +44,23 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
+
+    &.active {
+      background-color: #000; // Set the background color for the active page
+      color: #fff; // Set the text color for the active page
+      border-radius: 5px; // Add rounded corners to create a button-like effect
+      padding: 5px 10px; // Add padding for better appearance
+    }
   }
 
   @include media-query($on-palm) {
+    &.active {
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+    
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
