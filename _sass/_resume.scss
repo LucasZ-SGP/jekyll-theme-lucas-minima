@@ -132,21 +132,24 @@
 
 .contact-info {
   margin: 1.5rem auto;
-  width: 300px;
   text-align: left;
 
   p {
     margin: 0.5rem 0;
     @include sans_light;
     color: #333;
+    text-align: left;
 
     a {
       color: #333;
       text-decoration: none;
+      border-bottom: 1px solid;
+      font-weight: 400;
       @include transition(color 0.2s ease);
 
       &:hover {
         color: #9c9c9c;
+        border-bottom: none;
         font-weight: bold;
       }
     }
