@@ -144,7 +144,7 @@
       color: #333;
       text-decoration: none;
       border-bottom: 1px solid;
-      font-weight: 400;
+      letter-spacing: 0.235px;
       @include transition(color 0.2s ease);
 
       &:hover {
@@ -152,16 +152,7 @@
         border-bottom: none;
         font-weight: bold;
       }
-      &::before {
-        content: attr(title);
-        font-weight: bold;
-        height: 0;
-        overflow: hidden;
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+      
     }
   }
 }
