@@ -141,8 +141,9 @@
     text-align: left;
     font-weight: bold;
 
-    a {
+    .contact-details{
       color: #5e5e5e;
+      border-bottom: 1px solid;
       text-decoration: none;
       @include transition(color 0.2s ease);
 

@@ -48,8 +48,8 @@ layout: page-no-header
 
     {% if site.resume_looking_for_work == 'yes' %}
     <div class="contact-info no-print">
-      <p>Email: <a href="mailto:{{ site.resume_contact_email }}">{{ site.resume_contact_email }}</a></p>
-      <p>Contact: {{ site.resume_contact_number }}</p>
+      <p>Contact: <span class="contact-details">{{ site.resume_contact_number }}</span></p>
+      <p>Email: <a href="mailto:{{ site.resume_contact_email }}" class="contact-details">{{ site.resume_contact_email }}</a></p>
     </div>
     {% elsif site.resume_looking_for_work == 'no' %}
     <p class="contact-info not-looking no-print">I'm not looking for work right now.</p>
