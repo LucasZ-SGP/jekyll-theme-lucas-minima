@@ -222,7 +222,9 @@ layout: page-no-header
     </div>
   </section>
   <!-- end Interests -->
-  {% endif %} {% if site.resume_section_links %}
+  {% endif %} 
+  
+  {% if site.resume_section_links %}
   <!-- begin Links -->
   <section class="content-section">
     <header class="section-header">
@@ -233,14 +235,16 @@ layout: page-no-header
       <ul class="resume-item-list">
         {% for link in site.data.links %}
         <li>
-          <a href="{{" link.url }} itemprop="url">{{ link.description }}</a>
+          <a href="{{ link.url }}" itemprop="url">{{ link.description }}</a>
         </li>
         {% endfor %}
       </ul>
     </div>
   </section>
   <!-- end Links -->
-  {% endif %} {% if site.resume_print_social_links %}
+  {% endif %} 
+  
+  {% if site.resume_print_social_links %}
   <!-- begin Print Social Links -->
   <section class="content-section print-only">
     <header class="section-header">
