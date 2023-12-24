@@ -3,20 +3,20 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <h2 class="footer-heading">{{ site.footer_title | escape }}</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
-              {{ site.author | escape }}
+              Made by {{ site.author | escape }}
             {%- else -%}
-              {{ site.title | escape }}
+              {{ site.footer_title | escape }}
             {%- endif -%}
             </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- if site.resume_contact_email -%}
+            <li><a class="u-email" href="mailto:{{ site.resume_contact_email }}">{{ site.resume_contact_email }}</a></li>
             {%- endif -%}
         </ul>
       </div>
